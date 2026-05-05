@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="149" viewBox="0 0 1180 149">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="30" font-family="Arial" font-size="20" font-weight="700">Thinking Exemplar Transfer Accuracy</text>
+<text x="20" y="50" font-family="Arial" font-size="12" fill="#555">Qwen/Qwen3.5-4B, non-thinking evaluation, 30 examples per dataset</text>
+<line x1="250.0" y1="45" x2="250.0" y2="109" stroke="#e5e7eb" stroke-width="1"/>
+<text x="242.0" y="129" font-family="Arial" font-size="11" fill="#555">0%</text>
+<line x1="440.0" y1="45" x2="440.0" y2="109" stroke="#e5e7eb" stroke-width="1"/>
+<text x="432.0" y="129" font-family="Arial" font-size="11" fill="#555">25%</text>
+<line x1="630.0" y1="45" x2="630.0" y2="109" stroke="#e5e7eb" stroke-width="1"/>
+<text x="622.0" y="129" font-family="Arial" font-size="11" fill="#555">50%</text>
+<line x1="820.0" y1="45" x2="820.0" y2="109" stroke="#e5e7eb" stroke-width="1"/>
+<text x="812.0" y="129" font-family="Arial" font-size="11" fill="#555">75%</text>
+<line x1="1010.0" y1="45" x2="1010.0" y2="109" stroke="#e5e7eb" stroke-width="1"/>
+<text x="1002.0" y="129" font-family="Arial" font-size="11" fill="#555">100%</text>
+<text x="20" y="73" font-family="Arial" font-size="12">gsm8k</text>
+<rect x="250" y="59" width="380.0" height="10" fill="#64748b"/>
+<rect x="250" y="73" width="380.0" height="10" fill="#2563eb"/>
+<text x="1022" y="68" font-family="Arial" font-size="11" fill="#334155">none 50.0%</text>
+<text x="1022" y="82" font-family="Arial" font-size="11" fill="#1d4ed8">ctx 50.0%</text>
+<rect x="20" y="104" width="12" height="12" fill="#64748b"/>
+<text x="38" y="114" font-family="Arial" font-size="12" fill="#334155">none</text>
+<rect x="90" y="104" width="12" height="12" fill="#2563eb"/>
+<text x="108" y="114" font-family="Arial" font-size="12" fill="#1d4ed8">thinking_exemplar</text>
+</svg>
