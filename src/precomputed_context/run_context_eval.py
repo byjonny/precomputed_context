@@ -4,7 +4,7 @@
 This script intentionally uses only the Python standard library plus mlx_lm.
 Run it from the qwen conda environment, for example:
 
-    conda run -n qwen python run_context_eval.py
+    conda run -n qwen python -m precomputed_context.run_context_eval
 """
 
 from __future__ import annotations

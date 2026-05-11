@@ -18,7 +18,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from run_context_eval import (
+from precomputed_context.run_context_eval import (
     HF_ROWS_ENDPOINT,
     MODEL_ID,
     Example,

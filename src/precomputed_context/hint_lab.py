@@ -7,7 +7,7 @@ generalized before the model fails again.
 
 Example:
 
-    conda run -n qwen python hint_lab.py --case bbh_34_fruit_prices
+    conda run -n qwen python -m precomputed_context.hint_lab --case bbh_34_fruit_prices
 """
 
 from __future__ import annotations
@@ -21,7 +21,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from run_context_eval import MODEL_ID, parse_answer, validate_hint
+from precomputed_context.run_context_eval import MODEL_ID, parse_answer, validate_hint
 
 
 HINT_LEVELS = ["exact", "near_exact", "structured", "generalized", "minimal"]
@@ -315,7 +315,7 @@ def print_case_list(cases: list[dict[str, Any]]) -> None:
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run hand-authored precomputed-context hint ladders.")
-    parser.add_argument("--cases-file", default="hint_cases.json")
+    parser.add_argument("--cases-file", default="data/hint_cases.json")
     parser.add_argument("--case", nargs="+", default=[], help="Case ids to run. Defaults to all cases.")
     parser.add_argument("--dataset", nargs="+", default=[], help="Dataset names to run.")
     parser.add_argument(
@@ -332,7 +332,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--run-id", default="")
     parser.add_argument("--list", action="store_true", help="List cases and exit.")
     parser.add_argument("--dry-run", action="store_true", help="Validate and print prompts without loading the model.")
-    parser.add_argument("--update-cases", action="store_true", help="Append compact run history to hint_cases.json.")
+    parser.add_argument("--update-cases", action="store_true", help="Append compact run history to the cases JSON file.")
     return parser.parse_args(argv)
 
 

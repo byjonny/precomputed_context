@@ -24,8 +24,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Sequence
 
-from eval_dataset_reader import load_dataset
-from run_context_eval import MODEL_ID, Example, parse_answer
+from precomputed_context.eval_dataset_reader import load_dataset
+from precomputed_context.run_context_eval import MODEL_ID, Example, parse_answer
 
 
 CONDITIONS = ("none", "thinking_exemplar")

@@ -19,7 +19,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from run_context_eval import MODEL_ID, Example, load_bbh_config, parse_answer
+from precomputed_context.run_context_eval import MODEL_ID, Example, load_bbh_config, parse_answer
 
 
 LEVELS = ["none", "structured", "generalized", "minimal"]

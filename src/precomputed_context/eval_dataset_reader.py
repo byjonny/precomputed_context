@@ -6,7 +6,7 @@ examples into the shared `Example` shape already used by the evaluation scripts.
 
 Downstream Python interface:
 
-    from eval_dataset_reader import (
+    from precomputed_context.eval_dataset_reader import (
         DATASET_GROUPS,
         list_dataset_keys,
         list_dataset_specs,
@@ -34,11 +34,11 @@ Stable example contract:
 
 CLI examples:
 
-    python eval_dataset_reader.py --list
-    python eval_dataset_reader.py --show-interface
-    python eval_dataset_reader.py --datasets positive50 --offset 20 --limit 2 --preview 1
-    python eval_dataset_reader.py --datasets all --offset 0 --limit 5 --output data/examples.jsonl
-    python eval_dataset_reader.py --datasets bbh_date prontoqa --offset 20 --limit 1 --prompt-levels none structured
+    python -m precomputed_context.eval_dataset_reader --list
+    python -m precomputed_context.eval_dataset_reader --show-interface
+    python -m precomputed_context.eval_dataset_reader --datasets positive50 --offset 20 --limit 2 --preview 1
+    python -m precomputed_context.eval_dataset_reader --datasets all --offset 0 --limit 5 --output data/examples.jsonl
+    python -m precomputed_context.eval_dataset_reader --datasets bbh_date prontoqa --offset 20 --limit 1 --prompt-levels none structured
 """
 
 from __future__ import annotations
@@ -50,8 +50,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable, Sequence
 
-from run_context_eval import Example
-from structured_transfer_eval import DATASET_INFO, build_prompt, load_requested_dataset
+from precomputed_context.run_context_eval import Example
+from precomputed_context.structured_transfer_eval import DATASET_INFO, build_prompt, load_requested_dataset
 
 
 ALL_DATASETS = tuple(DATASET_INFO)

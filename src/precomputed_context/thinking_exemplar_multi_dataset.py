@@ -29,7 +29,7 @@ from pathlib import Path
 from typing import Any, Iterable, Sequence
 from urllib.parse import urlencode
 
-from run_context_eval import HF_ROWS_ENDPOINT, MODEL_ID, parse_answer, read_url_json
+from precomputed_context.run_context_eval import HF_ROWS_ENDPOINT, MODEL_ID, parse_answer, read_url_json
 
 
 LETTER_LABELS = [chr(ord("A") + idx) for idx in range(10)]
