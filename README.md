@@ -26,6 +26,7 @@ package in editable mode.
 ```bash
 PYTHONPATH=src python -m precomputed_context.run_context_eval
 PYTHONPATH=src python -m precomputed_context.structured_transfer_eval
+PYTHONPATH=src python -m precomputed_context.noise_ablation_eval
 PYTHONPATH=src python -m precomputed_context.bbh_transfer_eval
 PYTHONPATH=src python -m precomputed_context.hint_lab --cases-file data/hint_cases.json
 PYTHONPATH=src python -m precomputed_context.thinking_exemplar_transfer
@@ -53,4 +54,3 @@ python scripts/analysis/plot_thinking_exemplar_results.py
   `mlx_lm` for local model inference.
 - Default output directories still point into `results/` to preserve the
   existing artifact organization.
-
